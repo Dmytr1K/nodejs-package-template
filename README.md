@@ -1,5 +1,7 @@
 # Node.js package template
 
+[![Node CI](https://github.com/Dmytr1K/nodejs-package-template/workflows/Node%20CI/badge.svg)](https://github.com/Dmytr1K/nodejs-package-template/actions)
+
 ## Setup
 
 ```bash
