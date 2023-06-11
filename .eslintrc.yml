@@ -3,6 +3,8 @@
 plugins:
   # https://github.com/jest-community/eslint-plugin-jest
   - jest
+  # https://github.com/prettier/eslint-plugin-prettier
+  - prettier
 
 # https://eslint.org/docs/user-guide/configuring#specifying-environments
 env:
@@ -11,11 +13,14 @@ env:
 extends:
   - 'airbnb-base'
   - 'plugin:jest/recommended'
+  - 'prettier'
+  - 'plugin:prettier/recommended'
 
 parserOptions:
   ecmaVersion: latest
 
 rules:
+  prettier/prettier: error
   no-console: 0
   import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
     - error
