@@ -11,9 +11,9 @@ env:
   node: true
 
 extends:
-  - 'airbnb-base'
+  - airbnb-base
   - 'plugin:jest/recommended'
-  - 'prettier'
+  - prettier
   - 'plugin:prettier/recommended'
 
 parserOptions:
@@ -26,4 +26,8 @@ rules:
     - error
     - ignorePackages
     - js: always
-  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
+  no-underscore-dangle:
+    - 2
+    - allow:
+      - __filename
+      - __dirname
