@@ -7,6 +7,15 @@ install-deps:
 run:
 	bin/nodejs-package.js 'World'
 
+global-install: install
+	npm link
+
+global-uninstall:
+	npm uninstall --global nodejs-package
+
+global-run:
+	nodejs-package 'World'
+
 test:
 	npm test
 
@@ -18,5 +27,8 @@ lint:
 
 publish:
 	npm publish
+
+publish-test:
+	npm publish --dry-run
 
 .PHONY: test
